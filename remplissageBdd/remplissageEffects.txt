@@ -1,0 +1,34 @@
+INSERT INTO effects VALUES (1, "Grandmas are twice as efficient.");
+INSERT INTO effects VALUES (2, "Frams are twice as efficient.");
+INSERT INTO effects VALUES (3, "Mines are twice as efficient.");
+INSERT INTO effects VALUES (4, "Factories are twice as efficient.");
+INSERT INTO effects VALUES (5, "Banks are twice as efficient.");
+INSERT INTO effects VALUES (6, "Temples are twice as efficient.");
+INSERT INTO effects VALUES (7, "Wizard are twice as efficient.");
+INSERT INTO effects VALUES (8, "Shipments are twice as efficient.");
+INSERT INTO effects VALUES (9, "Alchemy labs are twice as efficient.");
+INSERT INTO effects VALUES (10, "Portals are twice as efficient.");
+INSERT INTO effects VALUES (11, "Time machines are twice as efficient.");
+INSERT INTO effects VALUES (12, "Antimatter condensers are twice as efficient.");
+INSERT INTO effects VALUES (13, "Prisms are twice as efficient.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

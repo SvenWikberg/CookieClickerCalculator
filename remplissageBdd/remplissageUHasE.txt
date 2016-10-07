@@ -1,0 +1,117 @@
+INSERT INTO upgrades_has_effects VALUES (1, 1);
+INSERT INTO upgrades_has_effects VALUES (2, 1);
+INSERT INTO upgrades_has_effects VALUES (3, 1);
+INSERT INTO upgrades_has_effects VALUES (4, 1);
+INSERT INTO upgrades_has_effects VALUES (5, 1);
+INSERT INTO upgrades_has_effects VALUES (6, 1);
+INSERT INTO upgrades_has_effects VALUES (7, 1);
+INSERT INTO upgrades_has_effects VALUES (8, 1);
+
+INSERT INTO upgrades_has_effects VALUES (9, 2);
+INSERT INTO upgrades_has_effects VALUES (10, 2);
+INSERT INTO upgrades_has_effects VALUES (11, 2);
+INSERT INTO upgrades_has_effects VALUES (12, 2);
+INSERT INTO upgrades_has_effects VALUES (13, 2);
+INSERT INTO upgrades_has_effects VALUES (14, 2);
+INSERT INTO upgrades_has_effects VALUES (15, 2);
+INSERT INTO upgrades_has_effects VALUES (16, 2);
+
+INSERT INTO upgrades_has_effects VALUES (17, 3);
+INSERT INTO upgrades_has_effects VALUES (18, 3);
+INSERT INTO upgrades_has_effects VALUES (19, 3);
+INSERT INTO upgrades_has_effects VALUES (20, 3);
+INSERT INTO upgrades_has_effects VALUES (21, 3);
+INSERT INTO upgrades_has_effects VALUES (22, 3);
+INSERT INTO upgrades_has_effects VALUES (23, 3);
+INSERT INTO upgrades_has_effects VALUES (24, 3);
+
+INSERT INTO upgrades_has_effects VALUES (25, 4);
+INSERT INTO upgrades_has_effects VALUES (26, 4);
+INSERT INTO upgrades_has_effects VALUES (27, 4);
+INSERT INTO upgrades_has_effects VALUES (28, 4);
+INSERT INTO upgrades_has_effects VALUES (29, 4);
+INSERT INTO upgrades_has_effects VALUES (30, 4);
+INSERT INTO upgrades_has_effects VALUES (31, 4);
+INSERT INTO upgrades_has_effects VALUES (32, 4);
+
+INSERT INTO upgrades_has_effects VALUES (33, 5);
+INSERT INTO upgrades_has_effects VALUES (34, 5);
+INSERT INTO upgrades_has_effects VALUES (35, 5);
+INSERT INTO upgrades_has_effects VALUES (36, 5);
+INSERT INTO upgrades_has_effects VALUES (37, 5);
+INSERT INTO upgrades_has_effects VALUES (38, 5);
+INSERT INTO upgrades_has_effects VALUES (39, 5);
+INSERT INTO upgrades_has_effects VALUES (40, 5);
+
+INSERT INTO upgrades_has_effects VALUES (41, 6);
+INSERT INTO upgrades_has_effects VALUES (42, 6);
+INSERT INTO upgrades_has_effects VALUES (43, 6);
+INSERT INTO upgrades_has_effects VALUES (44, 6);
+INSERT INTO upgrades_has_effects VALUES (45, 6);
+INSERT INTO upgrades_has_effects VALUES (46, 6);
+INSERT INTO upgrades_has_effects VALUES (47, 6);
+INSERT INTO upgrades_has_effects VALUES (48, 6);
+
+INSERT INTO upgrades_has_effects VALUES (49, 7);
+INSERT INTO upgrades_has_effects VALUES (50, 7);
+INSERT INTO upgrades_has_effects VALUES (51, 7);
+INSERT INTO upgrades_has_effects VALUES (52, 7);
+INSERT INTO upgrades_has_effects VALUES (53, 7);
+INSERT INTO upgrades_has_effects VALUES (54, 7);
+INSERT INTO upgrades_has_effects VALUES (55, 7);
+INSERT INTO upgrades_has_effects VALUES (56, 7);
+
+INSERT INTO upgrades_has_effects VALUES (57, 8);
+INSERT INTO upgrades_has_effects VALUES (58, 8);
+INSERT INTO upgrades_has_effects VALUES (59, 8);
+INSERT INTO upgrades_has_effects VALUES (60, 8);
+INSERT INTO upgrades_has_effects VALUES (61, 8);
+INSERT INTO upgrades_has_effects VALUES (62, 8);
+INSERT INTO upgrades_has_effects VALUES (63, 8);
+INSERT INTO upgrades_has_effects VALUES (64, 8);
+
+INSERT INTO upgrades_has_effects VALUES (65, 9);
+INSERT INTO upgrades_has_effects VALUES (66, 9);
+INSERT INTO upgrades_has_effects VALUES (67, 9);
+INSERT INTO upgrades_has_effects VALUES (68, 9);
+INSERT INTO upgrades_has_effects VALUES (69, 9);
+INSERT INTO upgrades_has_effects VALUES (70, 9);
+INSERT INTO upgrades_has_effects VALUES (71, 9);
+INSERT INTO upgrades_has_effects VALUES (72, 9);
+
+INSERT INTO upgrades_has_effects VALUES (73, 10);
+INSERT INTO upgrades_has_effects VALUES (74, 10);
+INSERT INTO upgrades_has_effects VALUES (75, 10);
+INSERT INTO upgrades_has_effects VALUES (76, 10);
+INSERT INTO upgrades_has_effects VALUES (77, 10);
+INSERT INTO upgrades_has_effects VALUES (78, 10);
+INSERT INTO upgrades_has_effects VALUES (79, 10);
+INSERT INTO upgrades_has_effects VALUES (80, 10);
+
+INSERT INTO upgrades_has_effects VALUES (81, 11);
+INSERT INTO upgrades_has_effects VALUES (82, 11);
+INSERT INTO upgrades_has_effects VALUES (83, 11);
+INSERT INTO upgrades_has_effects VALUES (84, 11);
+INSERT INTO upgrades_has_effects VALUES (85, 11);
+INSERT INTO upgrades_has_effects VALUES (86, 11);
+INSERT INTO upgrades_has_effects VALUES (87, 11);
+INSERT INTO upgrades_has_effects VALUES (88, 11);
+
+INSERT INTO upgrades_has_effects VALUES (89, 12);
+INSERT INTO upgrades_has_effects VALUES (90, 12);
+INSERT INTO upgrades_has_effects VALUES (91, 12);
+INSERT INTO upgrades_has_effects VALUES (92, 12);
+INSERT INTO upgrades_has_effects VALUES (93, 12);
+INSERT INTO upgrades_has_effects VALUES (94, 12);
+INSERT INTO upgrades_has_effects VALUES (95, 12);
+INSERT INTO upgrades_has_effects VALUES (96, 12);
+
+INSERT INTO upgrades_has_effects VALUES (97, 13);
+INSERT INTO upgrades_has_effects VALUES (98, 13);
+INSERT INTO upgrades_has_effects VALUES (99, 13);
+INSERT INTO upgrades_has_effects VALUES (100, 13);
+INSERT INTO upgrades_has_effects VALUES (101, 13);
+INSERT INTO upgrades_has_effects VALUES (102, 13);
+INSERT INTO upgrades_has_effects VALUES (103, 13);
+INSERT INTO upgrades_has_effects VALUES (104, 13);
+

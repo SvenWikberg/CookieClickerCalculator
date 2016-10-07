@@ -1,0 +1,117 @@
+INSERT INTO upgrades_isfor_buildings VALUES (1, 2);
+INSERT INTO upgrades_isfor_buildings VALUES (2, 2);
+INSERT INTO upgrades_isfor_buildings VALUES (3, 2);
+INSERT INTO upgrades_isfor_buildings VALUES (4, 2);
+INSERT INTO upgrades_isfor_buildings VALUES (5, 2);
+INSERT INTO upgrades_isfor_buildings VALUES (6, 2);
+INSERT INTO upgrades_isfor_buildings VALUES (7, 2);
+INSERT INTO upgrades_isfor_buildings VALUES (8, 2);
+
+INSERT INTO upgrades_isfor_buildings VALUES (9, 3);
+INSERT INTO upgrades_isfor_buildings VALUES (10, 3);
+INSERT INTO upgrades_isfor_buildings VALUES (11, 3);
+INSERT INTO upgrades_isfor_buildings VALUES (12, 3);
+INSERT INTO upgrades_isfor_buildings VALUES (13, 3);
+INSERT INTO upgrades_isfor_buildings VALUES (14, 3);
+INSERT INTO upgrades_isfor_buildings VALUES (15, 3);
+INSERT INTO upgrades_isfor_buildings VALUES (16, 3);
+
+INSERT INTO upgrades_isfor_buildings VALUES (17, 4);
+INSERT INTO upgrades_isfor_buildings VALUES (18, 4);
+INSERT INTO upgrades_isfor_buildings VALUES (19, 4);
+INSERT INTO upgrades_isfor_buildings VALUES (20, 4);
+INSERT INTO upgrades_isfor_buildings VALUES (21, 4);
+INSERT INTO upgrades_isfor_buildings VALUES (22, 4);
+INSERT INTO upgrades_isfor_buildings VALUES (23, 4);
+INSERT INTO upgrades_isfor_buildings VALUES (24, 4);
+
+INSERT INTO upgrades_isfor_buildings VALUES (25, 5);
+INSERT INTO upgrades_isfor_buildings VALUES (26, 5);
+INSERT INTO upgrades_isfor_buildings VALUES (27, 5);
+INSERT INTO upgrades_isfor_buildings VALUES (28, 5);
+INSERT INTO upgrades_isfor_buildings VALUES (29, 5);
+INSERT INTO upgrades_isfor_buildings VALUES (30, 5);
+INSERT INTO upgrades_isfor_buildings VALUES (31, 5);
+INSERT INTO upgrades_isfor_buildings VALUES (32, 5);
+
+INSERT INTO upgrades_isfor_buildings VALUES (33, 6);
+INSERT INTO upgrades_isfor_buildings VALUES (34, 6);
+INSERT INTO upgrades_isfor_buildings VALUES (35, 6);
+INSERT INTO upgrades_isfor_buildings VALUES (36, 6);
+INSERT INTO upgrades_isfor_buildings VALUES (37, 6);
+INSERT INTO upgrades_isfor_buildings VALUES (38, 6);
+INSERT INTO upgrades_isfor_buildings VALUES (39, 6);
+INSERT INTO upgrades_isfor_buildings VALUES (40, 6);
+
+INSERT INTO upgrades_isfor_buildings VALUES (41, 7);
+INSERT INTO upgrades_isfor_buildings VALUES (42, 7);
+INSERT INTO upgrades_isfor_buildings VALUES (43, 7);
+INSERT INTO upgrades_isfor_buildings VALUES (44, 7);
+INSERT INTO upgrades_isfor_buildings VALUES (45, 7);
+INSERT INTO upgrades_isfor_buildings VALUES (46, 7);
+INSERT INTO upgrades_isfor_buildings VALUES (47, 7);
+INSERT INTO upgrades_isfor_buildings VALUES (48, 7);
+
+INSERT INTO upgrades_isfor_buildings VALUES (49, 8);
+INSERT INTO upgrades_isfor_buildings VALUES (50, 8);
+INSERT INTO upgrades_isfor_buildings VALUES (51, 8);
+INSERT INTO upgrades_isfor_buildings VALUES (52, 8);
+INSERT INTO upgrades_isfor_buildings VALUES (53, 8);
+INSERT INTO upgrades_isfor_buildings VALUES (54, 8);
+INSERT INTO upgrades_isfor_buildings VALUES (55, 8);
+INSERT INTO upgrades_isfor_buildings VALUES (56, 8);
+
+INSERT INTO upgrades_isfor_buildings VALUES (57, 9);
+INSERT INTO upgrades_isfor_buildings VALUES (58, 9);
+INSERT INTO upgrades_isfor_buildings VALUES (59, 9);
+INSERT INTO upgrades_isfor_buildings VALUES (60, 9);
+INSERT INTO upgrades_isfor_buildings VALUES (61, 9);
+INSERT INTO upgrades_isfor_buildings VALUES (62, 9);
+INSERT INTO upgrades_isfor_buildings VALUES (63, 9);
+INSERT INTO upgrades_isfor_buildings VALUES (64, 9);
+
+INSERT INTO upgrades_isfor_buildings VALUES (65, 10);
+INSERT INTO upgrades_isfor_buildings VALUES (66, 10);
+INSERT INTO upgrades_isfor_buildings VALUES (67, 10);
+INSERT INTO upgrades_isfor_buildings VALUES (68, 10);
+INSERT INTO upgrades_isfor_buildings VALUES (69, 10);
+INSERT INTO upgrades_isfor_buildings VALUES (70, 10);
+INSERT INTO upgrades_isfor_buildings VALUES (71, 10);
+INSERT INTO upgrades_isfor_buildings VALUES (72, 10);
+
+INSERT INTO upgrades_isfor_buildings VALUES (73, 11);
+INSERT INTO upgrades_isfor_buildings VALUES (74, 11);
+INSERT INTO upgrades_isfor_buildings VALUES (75, 11);
+INSERT INTO upgrades_isfor_buildings VALUES (76, 11);
+INSERT INTO upgrades_isfor_buildings VALUES (77, 11);
+INSERT INTO upgrades_isfor_buildings VALUES (78, 11);
+INSERT INTO upgrades_isfor_buildings VALUES (79, 11);
+INSERT INTO upgrades_isfor_buildings VALUES (80, 11);
+
+INSERT INTO upgrades_isfor_buildings VALUES (81, 12);
+INSERT INTO upgrades_isfor_buildings VALUES (82, 12);
+INSERT INTO upgrades_isfor_buildings VALUES (83, 12);
+INSERT INTO upgrades_isfor_buildings VALUES (84, 12);
+INSERT INTO upgrades_isfor_buildings VALUES (85, 12);
+INSERT INTO upgrades_isfor_buildings VALUES (86, 12);
+INSERT INTO upgrades_isfor_buildings VALUES (87, 12);
+INSERT INTO upgrades_isfor_buildings VALUES (88, 12);
+
+INSERT INTO upgrades_isfor_buildings VALUES (89, 13);
+INSERT INTO upgrades_isfor_buildings VALUES (90, 13);
+INSERT INTO upgrades_isfor_buildings VALUES (91, 13);
+INSERT INTO upgrades_isfor_buildings VALUES (92, 13);
+INSERT INTO upgrades_isfor_buildings VALUES (93, 13);
+INSERT INTO upgrades_isfor_buildings VALUES (94, 13);
+INSERT INTO upgrades_isfor_buildings VALUES (95, 13);
+INSERT INTO upgrades_isfor_buildings VALUES (96, 13);
+
+INSERT INTO upgrades_isfor_buildings VALUES (97, 14);
+INSERT INTO upgrades_isfor_buildings VALUES (98, 14);
+INSERT INTO upgrades_isfor_buildings VALUES (99, 14);
+INSERT INTO upgrades_isfor_buildings VALUES (100, 14);
+INSERT INTO upgrades_isfor_buildings VALUES (101, 14);
+INSERT INTO upgrades_isfor_buildings VALUES (102, 14);
+INSERT INTO upgrades_isfor_buildings VALUES (103, 14);
+INSERT INTO upgrades_isfor_buildings VALUES (104, 14);
+

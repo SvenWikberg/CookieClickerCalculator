@@ -1,0 +1,9 @@
+BUILDINGS (_idBuilding_, name, basePrice, baseCps, imgFileName)
+
+UPGRADES (_idUpgrade_, name, basePrice; imgFileName, buildingsQuantityNeeded)
+
+EFFECTS (_idEffect_, effect)
+
+UPGRADES_ISFOR_BUILDINGS (_#idUpgrade,#idBuilding_)
+
+UPGRADES_HAS_EFFECTS (_#idUpgrade,#idEffect_)

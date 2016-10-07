@@ -1,0 +1,156 @@
+INSERT INTO upgrades VALUES (1, "Forwards from grandma", 1, 3, 1, "RollingPin.png");
+INSERT INTO upgrades VALUES (2, "Steel-plated rolling pins", 5, 3, 5, "PinkRollingPin.png");
+INSERT INTO upgrades VALUES (3, "Lubricated dentures", 5, 4, 25, "CyanRollingPin.png");
+INSERT INTO upgrades VALUES (4, "Prune juice", 5, 6, 50, "OrangeRollingPin.png");
+INSERT INTO upgrades VALUES (5, "Double-thick glasses", 5, 8, 100, "GoldRollingPin.png");
+INSERT INTO upgrades VALUES (6, "Aging agents", 5, 10, 150, "RustedRollingPin.png");
+INSERT INTO upgrades VALUES (7, "Xtreme walkers", 5, 13, 200, "BlackRollingPin.png");
+INSERT INTO upgrades VALUES (8, "The Unbridling", 5, 16, 250, "SilverRollingPin.png");
+
+INSERT INTO upgrades VALUES (9, "Cheap hoes", 1.1, 4, 1, "WateringCan.png");
+INSERT INTO upgrades VALUES (10, "Fertilizer", 5.5, 4, 5, "PinkWateringCan.png");
+INSERT INTO upgrades VALUES (11, "Cookie trees", 5.5, 5, 25, "CyanWateringCan.png");
+INSERT INTO upgrades VALUES (12, "Genetically-modified cookies", 5.5, 7, 50, "OrangeWateringCan.png");
+INSERT INTO upgrades VALUES (13, "Gingerbread scarecrows", 5.5, 9, 100, "GoldWateringCan.png");
+INSERT INTO upgrades VALUES (14, "Pulsar sprinklers", 5.5, 11, 150, "RustedWateringCan.png");
+INSERT INTO upgrades VALUES (15, "Fudge fungus", 5.5, 14, 200, "BlackWateringCan.png");
+INSERT INTO upgrades VALUES (16, "Wheat triffids", 5.5, 17, 250, "SilverWateringCan.png");
+
+INSERT INTO upgrades VALUES (17, "Sugar gas", 1.2, 5, 1, "Pick.png");
+INSERT INTO upgrades VALUES (18, "Megadrill", 6, 5, 5, "PinkPick.png");
+INSERT INTO upgrades VALUES (19, "Ultradrill", 6, 6, 25, "CyanPick.png");
+INSERT INTO upgrades VALUES (20, "Ultimadrill", 6, 8, 50, "OrangePick.png");
+INSERT INTO upgrades VALUES (21, "H-bomb mining", 6, 10, 100, "GoldPick.png");
+INSERT INTO upgrades VALUES (22, "Coreforge", 6, 12, 150, "RustedPick.png");
+INSERT INTO upgrades VALUES (23, "Planetsplitters", 6, 15, 200, "BlackPick.png");
+INSERT INTO upgrades VALUES (24, "Canola oil wells", 6, 18, 250, "SilverPick.png");
+
+INSERT INTO upgrades VALUES (25, "Sturdier conveyor belts", 1.3, 6, 1, "Gears.png");
+INSERT INTO upgrades VALUES (26, "Child labor", 6.5, 6, 5, "PinkGears.png");
+INSERT INTO upgrades VALUES (27, "Sweatshop", 6.5, 7, 25, "CyanGears.png");
+INSERT INTO upgrades VALUES (28, "Radium reactors", 6.5, 9, 50, "OrangeGears.png");
+INSERT INTO upgrades VALUES (29, "Recombobulators", 6.5, 11, 100, "GoldGears.png");
+INSERT INTO upgrades VALUES (30, "Deep-bake process", 6.5, 13, 150, "RustedGears.png");
+INSERT INTO upgrades VALUES (31, "Cyborg workforce", 6.5, 16, 200, "BlackGears.png");
+INSERT INTO upgrades VALUES (32, "78-hour days", 6.5, 19, 250, "SilverGears.png");
+
+INSERT INTO upgrades VALUES (33, "Taller tellers", 1.4, 7, 1, "Sack.png");
+INSERT INTO upgrades VALUES (34, "Scissor-resistant credit cards", 7, 7, 5, "PinkSack.png");
+INSERT INTO upgrades VALUES (35, "Acid-proof vaults", 7, 8, 25, "CyanSack.png");
+INSERT INTO upgrades VALUES (36, "Chocolate coins", 7, 10, 50, "OrangeSack.png");
+INSERT INTO upgrades VALUES (37, "Exponential interest rates", 7, 12, 100, "GoldSack.png");
+INSERT INTO upgrades VALUES (38, "Financial zen", 7, 14, 150, "RustedSack.png");
+INSERT INTO upgrades VALUES (39, "Way of the wallet", 7, 17, 200, "BlackSack.png");
+INSERT INTO upgrades VALUES (40, "The stuff rationale", 7, 20, 250, "SilverSack.png");
+
+INSERT INTO upgrades VALUES (41, "Golden idols", 2, 8, 1, "Idol.png");
+INSERT INTO upgrades VALUES (42, "Sacrifices", 1, 9, 5, "PinkIdol.png");
+INSERT INTO upgrades VALUES (43, "Delicious blessing", 1, 10, 25, "CyanIdol.png");
+INSERT INTO upgrades VALUES (44, "Sun festival", 1, 12, 50, "OrangeIdol.png");
+INSERT INTO upgrades VALUES (45, "Enlarged pantheon", 1, 14, 100, "GoldIdol.png");
+INSERT INTO upgrades VALUES (46, "Great Baker in the sky", 1, 16, 150, "RustedIdol.png");
+INSERT INTO upgrades VALUES (47, "Creation myth", 1, 19, 200, "BlackIdol.png");
+INSERT INTO upgrades VALUES (48, "Theocracy", 1, 22, 250, "SilverIdol.png");
+
+INSERT INTO upgrades VALUES (49, "Pointier hats", 3.3, 9, 1, "Hat.png");
+INSERT INTO upgrades VALUES (50, "Beardlier beards", 1.65, 10, 5, "PinkHat.png");
+INSERT INTO upgrades VALUES (51, "Ancient grimoires", 1.65, 11, 25, "CyanHat.png");
+INSERT INTO upgrades VALUES (52, "Kitchen curses", 1.65, 13, 50, "OrangeHat.png");
+INSERT INTO upgrades VALUES (53, "School of sorcery", 1.65, 15, 100, "GoldHat.png");
+INSERT INTO upgrades VALUES (54, "Dark formulas", 1.65, 17, 150, "RustedHat.png");
+INSERT INTO upgrades VALUES (55, "Cookiemancy", 1.65, 20, 200, "BlackHat.png");
+INSERT INTO upgrades VALUES (56, "Rabbit trick", 1.65, 23, 250, "SilverHat.png");
+
+INSERT INTO upgrades VALUES (57, "Vanilla nebulae", 5.1, 10, 1, "Spaceship.png");
+INSERT INTO upgrades VALUES (58, "Wormholes", 2.55, 11, 5, "PinkSpaceship.png");
+INSERT INTO upgrades VALUES (59, "Frequent flyer", 2.55, 12, 25, "CyanSpaceship.png");
+INSERT INTO upgrades VALUES (60, "Warp drive", 2.55, 14, 50, "OrangeSpaceship.png");
+INSERT INTO upgrades VALUES (61, "Chocolate monoliths", 2.55, 16, 100, "GoldSpaceship.png");
+INSERT INTO upgrades VALUES (62, "Generation ship", 2.55, 18, 150, "RustedSpaceship.png");
+INSERT INTO upgrades VALUES (63, "Dyson sphere", 2.55, 21, 200, "BlackSpaceship.png");
+INSERT INTO upgrades VALUES (64, "The final frontier", 2.55, 24, 250, "SilverSpaceship.png");
+
+INSERT INTO upgrades VALUES (65, "Antimony", 7.5, 11, 1, "Falsk.png");
+INSERT INTO upgrades VALUES (66, "Essence of dough", 3.75, 12, 5, "PinkFalsk.png");
+INSERT INTO upgrades VALUES (67, "True chocolate", 3.75, 13, 25, "CyanFalsk.png");
+INSERT INTO upgrades VALUES (68, "Ambrosia", 3.75, 15, 50, "OrangeFalsk.png");
+INSERT INTO upgrades VALUES (69, "Aqua crustulae", 3.75, 17, 100, "GoldFalsk.png");
+INSERT INTO upgrades VALUES (70, "Origin crucible", 3.75, 19, 150, "RustedFalsk.png");
+INSERT INTO upgrades VALUES (71, "Theory of atomic fluidity", 3.75, 22, 200, "BlackFalsk.png");
+INSERT INTO upgrades VALUES (72, "Beige goo", 3.75, 25, 250, "SilverFalsk.png");
+
+INSERT INTO upgrades VALUES (73, "Ancient tablet", 1, 13, 1, "Galaxy.png");
+INSERT INTO upgrades VALUES (74, "Insane oatling workers", 5, 13, 5, "PinkGalaxy.png");
+INSERT INTO upgrades VALUES (75, "Soul bond", 5, 14, 25, "CyanGalaxy.png");
+INSERT INTO upgrades VALUES (76, "Sanity dance", 5, 16, 50, "OrangeGalaxy.png");
+INSERT INTO upgrades VALUES (77, "Brane transplant", 5, 18, 100, "GoldGalaxy.png");
+INSERT INTO upgrades VALUES (78, "Deity-sized portals", 5, 20, 150, "RustedGalaxy.png");
+INSERT INTO upgrades VALUES (79, "End of times back-up plan", 5, 23, 200, "BlackGalaxy.png");
+INSERT INTO upgrades VALUES (80, "Maddening chants", 5, 26, 250, "SilverGalaxy.png");
+
+INSERT INTO upgrades VALUES (81, "Flux capacitors", 1.4, 14, 1, "PocketWatch.png");
+INSERT INTO upgrades VALUES (82, "Time paradox resolver", 7, 14, 5, "PinkPocketWatch.png");
+INSERT INTO upgrades VALUES (83, "Quantum conundrum", 7, 15, 25, "CyanPocketWatch.png");
+INSERT INTO upgrades VALUES (84, "Causality enforcer", 7, 17, 50, "OrangePocketWatch.png");
+INSERT INTO upgrades VALUES (85, "Yestermorrow comparators", 7, 19, 100, "GoldPocketWatch.png");
+INSERT INTO upgrades VALUES (86, "Far future enactment", 7, 21, 150, "RustedPocketWatch.png");
+INSERT INTO upgrades VALUES (87, "Great loop hypothesis", 7, 24, 200, "BlackPocketWatch.png");
+INSERT INTO upgrades VALUES (88, "Cookietopian moments of maybe", 7, 27, 250, "SilverPocketWatch.png");
+
+INSERT INTO upgrades VALUES (89, "Sugar bosons", 1.7, 15, 1, "Particles.png");
+INSERT INTO upgrades VALUES (90, "String theory", 8.5, 15, 5, "PinkParticles.png");
+INSERT INTO upgrades VALUES (91, "Large macaron collider", 8.5, 16, 25, "CyanParticles.png");
+INSERT INTO upgrades VALUES (92, "Big bang bake", 8.5, 18, 50, "OrangeParticles.png");
+INSERT INTO upgrades VALUES (93, "Reverse cyclotrons", 8.5, 20, 100, "GoldParticles.png");
+INSERT INTO upgrades VALUES (94, "anocosmics", 8.5, 22, 150, "RustedParticles.png");
+INSERT INTO upgrades VALUES (95, "The Pulse", 8.5, 25, 200, "BlackParticles.png");
+INSERT INTO upgrades VALUES (96, "Some other super-tiny fundamental particle? Probably?", 8.5, 28, 250, "SilverParticles.png");
+
+INSERT INTO upgrades VALUES (97, "Gem polish", 2.1, 16, 1, "Prism.png");
+INSERT INTO upgrades VALUES (98, "9th color", 1.05, 17, 5, "PinkPrism.png");
+INSERT INTO upgrades VALUES (99, "Chocolate light", 1.05, 18, 25, "CyanPrism.png");
+INSERT INTO upgrades VALUES (100, "Grainbow", 1.05, 20, 50, "OrangePrism.png");
+INSERT INTO upgrades VALUES (101, "Pure cosmic light", 1.05, 22, 100, "GoldPrism.png");
+INSERT INTO upgrades VALUES (102, "Glow-in-the-dark", 1.05, 24, 150, "RustedPrism.png");
+INSERT INTO upgrades VALUES (103, "Lux sanctorum", 1.05, 27, 200, "BlackPrism.png");
+INSERT INTO upgrades VALUES (104, "Reverse shadows", 1.05, 30, 250, "SilverPrism.png");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
