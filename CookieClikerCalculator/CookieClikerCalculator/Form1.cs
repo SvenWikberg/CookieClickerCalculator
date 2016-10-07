@@ -77,7 +77,7 @@ namespace CookieClikerCalculator
             lblCps.Text = String.Format("{0:0.00}", cps);
         }
 
-        public void calaculateBestItem()
+        public void calaculateBestItem() // A FINIR
         {
             foreach (BuildingsControl bui in lstBuiCtrl)
             {
