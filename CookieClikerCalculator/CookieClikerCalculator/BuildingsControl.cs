@@ -25,6 +25,21 @@ namespace CookieClikerCalculator
         Label _lblCps;
         NumericUpDown _nudCount;
 
+        public NumericUpDown NudCount
+        {
+            get
+            {
+                return _nudCount;
+            }
+        }
+
+        public decimal BaseCps
+        {
+            get
+            {
+                return _baseCps;
+            }
+        }
 
         public BuildingsControl(TabPage myPage, Point location, string name, decimal basePrice, decimal baseCps, Image img)
         {
