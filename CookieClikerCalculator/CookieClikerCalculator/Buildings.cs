@@ -23,7 +23,7 @@ namespace CookieClikerCalculator
             _name = name;
             _basePrice = basePrice;
             _basePricePuissance10 = basePricePuissance10;
-            _baseCps = basePrice;
+            _baseCps = baseCps;
             _baseCpsPuissance10 = baseCpsPuissance10;
             _imgFileName = imgFileName;
         }

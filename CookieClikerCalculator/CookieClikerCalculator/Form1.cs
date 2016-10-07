@@ -22,25 +22,38 @@ namespace CookieClikerCalculator
             MySqlConnection myBdd = new MySqlConnection("server=127.0.0.1;database=cookieClicker;user=wikbergs;password=1234");
             MyConnection connection = new MyConnection(myBdd);
 
-            List<Buildings> lstBuilding = new List<Buildings>(connection.SelectBuildings());
-            ImageList imgLstBuilding = new ImageList();
+            List<Buildings> lstBuilding = new List<Buildings>(connection.GetBuildings);
+            BuildingsControl tmp;
 
-            BigInteger testx = new BigInteger();
-            int testy;
-            BigInteger testr = new BigInteger();
+            #region comm
+            /*ImageList imgLstBuilding = new ImageList();
+            decimal basePrice = 0;
 
-            testx = (BigInteger)lstBuilding[13].BasePrice;
-            testy = (int)lstBuilding[13].BasePricePuissance10;
+            decimal testx;
+            decimal testy;
+            decimal testr;
 
-            testr = testx * BigInteger.Pow(10, testy);
+            testx = (decimal)lstBuilding[13].BasePrice;
+            testy = (decimal)lstBuilding[13].BasePricePuissance10;
+
+            testr = (decimal)Math.Pow(10.0, (double)testy) * testx;
 
 
             foreach (Buildings bui in lstBuilding)
             {
                 ListViewItem tmp = new ListViewItem("");
                 tmp.SubItems.Add(bui.Name);
+                tmp.SubItems.Add(((decimal)Math.Pow(10, bui.BasePricePuissance10) * (decimal)bui.BasePrice).ToString());
+                tmp.SubItems.Add(((decimal)Math.Pow(10, bui.BaseCpsPuissance10) * (decimal)bui.BaseCps).ToString());
                 //tmp.ImageKey = "img/buildings/" + bui.ImgFileName;
                 lstViewBuildings.Items.Add(tmp);
+            }*/
+            #endregion
+
+            for (int i = 0; i < lstBuilding.Count; i++)
+            {
+                tmp = new BuildingsControl(tPageBuilding, new Point(20, i * 40), lstBuilding[i].Name, (decimal)Math.Pow(10, lstBuilding[i].BasePricePuissance10) * (decimal)lstBuilding[i].BasePrice, (decimal)Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * (decimal)lstBuilding[i].BaseCps, new Bitmap(Image.FromFile("img/buildings/" + lstBuilding[i].ImgFileName)));
+                tmp.drawBuildingsControl();
             }
         }
     }
