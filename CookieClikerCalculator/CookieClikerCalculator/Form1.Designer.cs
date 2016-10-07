@@ -33,6 +33,8 @@
             this.tPageUpgrade = new System.Windows.Forms.TabPage();
             this.lblCurrentCps = new System.Windows.Forms.Label();
             this.lblCps = new System.Windows.Forms.Label();
+            this.lblBestItem = new System.Windows.Forms.Label();
+            this.lblBestItem1 = new System.Windows.Forms.Label();
             this.tCtrlBuiUp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +64,7 @@
             this.tPageUpgrade.Location = new System.Drawing.Point(4, 22);
             this.tPageUpgrade.Name = "tPageUpgrade";
             this.tPageUpgrade.Padding = new System.Windows.Forms.Padding(3);
-            this.tPageUpgrade.Size = new System.Drawing.Size(592, 523);
+            this.tPageUpgrade.Size = new System.Drawing.Size(592, 570);
             this.tPageUpgrade.TabIndex = 1;
             this.tPageUpgrade.Text = "tabPage2";
             this.tPageUpgrade.UseVisualStyleBackColor = true;
@@ -79,17 +81,37 @@
             // lblCps
             // 
             this.lblCps.AutoSize = true;
-            this.lblCps.Location = new System.Drawing.Point(13, 30);
+            this.lblCps.Location = new System.Drawing.Point(13, 35);
             this.lblCps.Name = "lblCps";
             this.lblCps.Size = new System.Drawing.Size(13, 13);
             this.lblCps.TabIndex = 2;
             this.lblCps.Text = "0";
+            // 
+            // lblBestItem
+            // 
+            this.lblBestItem.AutoSize = true;
+            this.lblBestItem.Location = new System.Drawing.Point(13, 188);
+            this.lblBestItem.Name = "lblBestItem";
+            this.lblBestItem.Size = new System.Drawing.Size(56, 13);
+            this.lblBestItem.TabIndex = 3;
+            this.lblBestItem.Text = "Best Items";
+            // 
+            // lblBestItem1
+            // 
+            this.lblBestItem1.AutoSize = true;
+            this.lblBestItem1.Location = new System.Drawing.Point(13, 210);
+            this.lblBestItem1.Name = "lblBestItem1";
+            this.lblBestItem1.Size = new System.Drawing.Size(10, 13);
+            this.lblBestItem1.TabIndex = 4;
+            this.lblBestItem1.Text = "-";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 598);
+            this.Controls.Add(this.lblBestItem1);
+            this.Controls.Add(this.lblBestItem);
             this.Controls.Add(this.lblCps);
             this.Controls.Add(this.lblCurrentCps);
             this.Controls.Add(this.tCtrlBuiUp);
@@ -108,6 +130,8 @@
         private System.Windows.Forms.TabPage tPageUpgrade;
         private System.Windows.Forms.Label lblCurrentCps;
         private System.Windows.Forms.Label lblCps;
+        private System.Windows.Forms.Label lblBestItem;
+        private System.Windows.Forms.Label lblBestItem1;
     }
 }
 

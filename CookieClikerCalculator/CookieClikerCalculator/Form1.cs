@@ -16,6 +16,7 @@ namespace CookieClikerCalculator
     public partial class frmMain : Form
     {
         List<BuildingsControl> lstBuiCtrl;
+        List<CpsItem> lstCpsItem;
         decimal cps;
 
         public frmMain()
@@ -27,6 +28,7 @@ namespace CookieClikerCalculator
 
             List<Buildings> lstBuilding = new List<Buildings>(connection.GetBuildings);
             lstBuiCtrl = new List<BuildingsControl>();
+            lstCpsItem = new List<CpsItem>();
 
             #region comm
             /*ImageList imgLstBuilding = new ImageList();
@@ -60,7 +62,7 @@ namespace CookieClikerCalculator
                 lstBuiCtrl[i].NudCount.ValueChanged += calculateCps;
             }
 
-
+            calaculateBestItem();
         }
 
         public void calculateCps(object sender, EventArgs e)
@@ -73,6 +75,19 @@ namespace CookieClikerCalculator
             }
 
             lblCps.Text = String.Format("{0:0.00}", cps);
+        }
+
+        public void calaculateBestItem()
+        {
+            foreach (BuildingsControl bui in lstBuiCtrl)
+            {
+                lstCpsItem.Add(new CpsItem(bui.Price, bui.Cps, bui.Name));
+            }
+
+
+            decimal test = lstCpsItem.Min(t => t.Ratio);
+            //lstCpsItem.Sort();
+            
         }
     }
 }

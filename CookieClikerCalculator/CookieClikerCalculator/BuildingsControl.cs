@@ -41,6 +41,30 @@ namespace CookieClikerCalculator
             }
         }
 
+        public decimal Price
+        {
+            get
+            {
+                return _price;
+            }
+        }
+
+        public decimal Cps
+        {
+            get
+            {
+                return _cps;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+        }
+
         public BuildingsControl(TabPage myPage, Point location, string name, decimal basePrice, decimal baseCps, Image img)
         {
             _myPage = myPage;
