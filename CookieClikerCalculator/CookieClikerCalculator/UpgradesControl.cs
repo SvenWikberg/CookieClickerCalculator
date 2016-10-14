@@ -91,7 +91,7 @@ namespace CookieClikerCalculator
             _ckbxBuyed = new CheckBox();
             _ckbxBuyed.Location = new Point(_lblPrice.Location.X + 300, _location.Y + 15);
             _ckbxBuyed.Checked = false;
-            //_ckbxBuyed.ValueChanged += addBuilding;
+            //_ckbxBuyed.CheckedChanged
 
             _myPage.Controls.Add(_pbx);
             _myPage.Controls.Add(_lblName);

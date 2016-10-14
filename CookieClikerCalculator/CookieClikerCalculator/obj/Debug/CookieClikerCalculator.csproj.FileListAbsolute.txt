@@ -19,3 +19,4 @@ C:\Users\wikbergs_info\Desktop\vendredi\ProjetN1\CookieClickerCalculator\CookieC
 C:\Users\wikbergs_info\Desktop\vendredi\ProjetN1\CookieClickerCalculator\CookieClikerCalculator\CookieClikerCalculator\obj\Debug\CookieClikerCalculator.frmMain.resources
 C:\Users\wikbergs_info\Desktop\vendredi\ProjetN1\CookieClickerCalculator\CookieClikerCalculator\CookieClikerCalculator\obj\Debug\CookieClikerCalculator.Properties.Resources.resources
 C:\Users\wikbergs_info\Desktop\vendredi\ProjetN1\CookieClickerCalculator\CookieClikerCalculator\CookieClikerCalculator\obj\Debug\CookieClikerCalculator.csproj.GenerateResource.Cache
+C:\Users\wikbergs_info\Desktop\vendredi\ProjetN1\CookieClickerCalculator\CookieClikerCalculator\CookieClikerCalculator\obj\Debug\CookieClikerCalculator.csprojResolveAssemblyReference.cache

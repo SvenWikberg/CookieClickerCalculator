@@ -55,6 +55,12 @@ namespace CookieClikerCalculator
             calculateBestItem();
         }
 
+        public void UpCtrlCkBx_CheckedChanged(object sender, EventArgs e)
+        {
+            calculateCps();
+            calculateBestItem();
+        }
+
         public void calculateCps()
         {
             cps = 0;
@@ -82,68 +88,6 @@ namespace CookieClikerCalculator
             for (int i = 0; i < 5; i++)
             {
                 lbxBestItem.Items.Add(String.Format("{0}. {1}", i + 1, lstCpsItem[i].Name));
-            }
-        }
-
-        public void applyEffect(int idBuilding)
-        {
-            switch (idBuilding)
-            {
-                case 0: //Grandmas are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 1: //Frams are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 2: //Mines are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 3: //Factories are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 4: //Banks are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-
-                    break;
-
-                case 5: //Temples are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 6: //Wizard are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 7: //Shipments are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 8: //Alchemy labs are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 9: //Portals are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 10: //Time machines are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 11: //Antimatter condensers are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                case 12: //Prisms are twice as efficient.
-                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
-                    break;
-
-                default:
-                    break;
             }
         }
     }
