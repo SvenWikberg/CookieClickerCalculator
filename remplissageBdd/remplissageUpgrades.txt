@@ -70,14 +70,14 @@ INSERT INTO upgrades VALUES (62, "Generation ship", 2.55, 18, 150, "RustedSpaces
 INSERT INTO upgrades VALUES (63, "Dyson sphere", 2.55, 21, 200, "BlackSpaceship.png");
 INSERT INTO upgrades VALUES (64, "The final frontier", 2.55, 24, 250, "SilverSpaceship.png");
 
-INSERT INTO upgrades VALUES (65, "Antimony", 7.5, 11, 1, "Falsk.png");
-INSERT INTO upgrades VALUES (66, "Essence of dough", 3.75, 12, 5, "PinkFalsk.png");
-INSERT INTO upgrades VALUES (67, "True chocolate", 3.75, 13, 25, "CyanFalsk.png");
-INSERT INTO upgrades VALUES (68, "Ambrosia", 3.75, 15, 50, "OrangeFalsk.png");
-INSERT INTO upgrades VALUES (69, "Aqua crustulae", 3.75, 17, 100, "GoldFalsk.png");
-INSERT INTO upgrades VALUES (70, "Origin crucible", 3.75, 19, 150, "RustedFalsk.png");
-INSERT INTO upgrades VALUES (71, "Theory of atomic fluidity", 3.75, 22, 200, "BlackFalsk.png");
-INSERT INTO upgrades VALUES (72, "Beige goo", 3.75, 25, 250, "SilverFalsk.png");
+INSERT INTO upgrades VALUES (65, "Antimony", 7.5, 11, 1, "Flask.png");
+INSERT INTO upgrades VALUES (66, "Essence of dough", 3.75, 12, 5, "PinkFlask.png");
+INSERT INTO upgrades VALUES (67, "True chocolate", 3.75, 13, 25, "CyanFlask.png");
+INSERT INTO upgrades VALUES (68, "Ambrosia", 3.75, 15, 50, "OrangeFlask.png");
+INSERT INTO upgrades VALUES (69, "Aqua crustulae", 3.75, 17, 100, "GoldFlask.png");
+INSERT INTO upgrades VALUES (70, "Origin crucible", 3.75, 19, 150, "RustedFlask.png");
+INSERT INTO upgrades VALUES (71, "Theory of atomic fluidity", 3.75, 22, 200, "BlackFlask.png");
+INSERT INTO upgrades VALUES (72, "Beige goo", 3.75, 25, 250, "SilverFlask.png");
 
 INSERT INTO upgrades VALUES (73, "Ancient tablet", 1, 13, 1, "Galaxy.png");
 INSERT INTO upgrades VALUES (74, "Insane oatling workers", 5, 13, 5, "PinkGalaxy.png");

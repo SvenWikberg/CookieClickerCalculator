@@ -8,11 +8,11 @@ namespace CookieClikerCalculator
 {
     class CpsItem
     {
-        decimal _price;
-        decimal _cps;
+        double _price;
+        double _cps;
         string _name;
 
-        public decimal Ratio
+        public double Ratio
         {
             get
             {
@@ -28,7 +28,7 @@ namespace CookieClikerCalculator
             }
         }
 
-        public CpsItem(decimal price, decimal cps, string name)
+        public CpsItem(double price, double cps, string name)
         {
             _price = price;
             _cps = cps;

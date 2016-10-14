@@ -61,12 +61,13 @@
             // 
             // tPageUpgrade
             // 
+            this.tPageUpgrade.AutoScroll = true;
             this.tPageUpgrade.Location = new System.Drawing.Point(4, 22);
             this.tPageUpgrade.Name = "tPageUpgrade";
             this.tPageUpgrade.Padding = new System.Windows.Forms.Padding(3);
             this.tPageUpgrade.Size = new System.Drawing.Size(592, 570);
             this.tPageUpgrade.TabIndex = 1;
-            this.tPageUpgrade.Text = "tabPage2";
+            this.tPageUpgrade.Text = "Upgrades";
             this.tPageUpgrade.UseVisualStyleBackColor = true;
             // 
             // lblCurrentCps
@@ -114,6 +115,8 @@
             this.Controls.Add(this.lblCps);
             this.Controls.Add(this.lblCurrentCps);
             this.Controls.Add(this.tCtrlBuiUp);
+            this.MaximumSize = new System.Drawing.Size(915, 636);
+            this.MinimumSize = new System.Drawing.Size(915, 636);
             this.Name = "frmMain";
             this.Text = "Cookie Clicker Calculator";
             this.tCtrlBuiUp.ResumeLayout(false);

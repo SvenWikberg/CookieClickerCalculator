@@ -16,7 +16,8 @@ namespace CookieClikerCalculator
     public partial class frmMain : Form
     {
         List<BuildingsControl> lstBuiCtrl;
-        decimal cps;
+        List<UpgradesControl> lstUpCtrl;
+        double cps;
 
         public frmMain()
         {
@@ -28,36 +29,21 @@ namespace CookieClikerCalculator
             List<Buildings> lstBuilding = new List<Buildings>(connection.GetBuildings);
             lstBuiCtrl = new List<BuildingsControl>();
 
-            #region comm
-            /*ImageList imgLstBuilding = new ImageList();
-            decimal basePrice = 0;
+            List<Upgrades> lstUpgrade = new List<Upgrades>(connection.GetUpgrades);
+            lstUpCtrl = new List<UpgradesControl>();
 
-            decimal testx;
-            decimal testy;
-            decimal testr;
-
-            testx = (decimal)lstBuilding[13].BasePrice;
-            testy = (decimal)lstBuilding[13].BasePricePuissance10;
-
-            testr = (decimal)Math.Pow(10.0, (double)testy) * testx;
-
-
-            foreach (Buildings bui in lstBuilding)
-            {
-                ListViewItem tmp = new ListViewItem("");
-                tmp.SubItems.Add(bui.Name);
-                tmp.SubItems.Add(((decimal)Math.Pow(10, bui.BasePricePuissance10) * (decimal)bui.BasePrice).ToString());
-                tmp.SubItems.Add(((decimal)Math.Pow(10, bui.BaseCpsPuissance10) * (decimal)bui.BaseCps).ToString());
-                //tmp.ImageKey = "img/buildings/" + bui.ImgFileName;
-                lstViewBuildings.Items.Add(tmp);
-            }*/
-            #endregion
 
             for (int i = 0; i < lstBuilding.Count; i++)
             {
-                lstBuiCtrl.Add(new BuildingsControl(tPageBuilding, new Point(20, i * 40), lstBuilding[i].Name, (decimal)Math.Pow(10, lstBuilding[i].BasePricePuissance10) * (decimal)lstBuilding[i].BasePrice, (decimal)Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * (decimal)lstBuilding[i].BaseCps, new Bitmap(Image.FromFile("img/buildings/" + lstBuilding[i].ImgFileName))));
+                lstBuiCtrl.Add(new BuildingsControl(tPageBuilding, new Point(20, i * 40), lstBuilding[i].Name, Math.Pow(10, lstBuilding[i].BasePricePuissance10) * lstBuilding[i].BasePrice, Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * lstBuilding[i].BaseCps, new Bitmap(Image.FromFile("img/buildings/" + lstBuilding[i].ImgFileName))));
                 lstBuiCtrl[i].drawBuildingsControl();
                 lstBuiCtrl[i].NudCount.ValueChanged += BuiCtrlNud_ValueChanged;
+            }
+
+            for (int i = 0; i < lstUpgrade.Count; i++)
+            {
+                lstUpCtrl.Add(new UpgradesControl(tPageUpgrade, new Point(20, i * 40), lstUpgrade[i].Name, Math.Pow(10, lstUpgrade[i].BasePricePuissance10) * lstUpgrade[i].BasePrice, new Bitmap(Image.FromFile("img/upgrades/" + lstUpgrade[i].ImgFileName))));
+                lstUpCtrl[i].drawUpgradesControl();
             }
 
             calculateBestItem();
@@ -75,7 +61,7 @@ namespace CookieClikerCalculator
 
             foreach (BuildingsControl buiCtrl in lstBuiCtrl)
             {
-                cps += Decimal.Multiply(buiCtrl.BaseCps, (decimal)buiCtrl.NudCount.Value);
+                cps += buiCtrl.BaseCps * (double)buiCtrl.NudCount.Value;
             }
 
             lblCps.Text = String.Format("{0:0.00}", cps);
@@ -95,7 +81,69 @@ namespace CookieClikerCalculator
             lstCpsItem = lstCpsItem.OrderBy(o => o.Ratio).ToList();
             for (int i = 0; i < 5; i++)
             {
-                lbxBestItem.Items.Add(String.Format("{0}. {1}", i + 1,lstCpsItem[i].Name));
+                lbxBestItem.Items.Add(String.Format("{0}. {1}", i + 1, lstCpsItem[i].Name));
+            }
+        }
+
+        public void applyEffect(int idBuilding)
+        {
+            switch (idBuilding)
+            {
+                case 0: //Grandmas are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 1: //Frams are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 2: //Mines are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 3: //Factories are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 4: //Banks are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+
+                    break;
+
+                case 5: //Temples are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 6: //Wizard are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 7: //Shipments are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 8: //Alchemy labs are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 9: //Portals are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 10: //Time machines are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 11: //Antimatter condensers are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                case 12: //Prisms are twice as efficient.
+                    lstBuiCtrl[idBuilding].Cps = lstBuiCtrl[idBuilding].Cps * 2;
+                    break;
+
+                default:
+                    break;
             }
         }
     }

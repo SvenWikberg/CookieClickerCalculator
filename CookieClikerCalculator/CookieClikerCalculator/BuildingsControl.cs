@@ -13,10 +13,10 @@ namespace CookieClikerCalculator
         TabPage _myPage;
         Point _location;
         string _name;
-        decimal _basePrice;
-        decimal _price;
-        decimal _baseCps;
-        decimal _cps;
+        double _basePrice;
+        double _price;
+        double _baseCps;
+        double _cps;
         Image _img;
 
         PictureBox _pbx;
@@ -25,47 +25,7 @@ namespace CookieClikerCalculator
         Label _lblCps;
         NumericUpDown _nudCount;
 
-        public NumericUpDown NudCount
-        {
-            get
-            {
-                return _nudCount;
-            }
-        }
-
-        public decimal BaseCps
-        {
-            get
-            {
-                return _baseCps;
-            }
-        }
-
-        public decimal Price
-        {
-            get
-            {
-                return _price;
-            }
-        }
-
-        public decimal Cps
-        {
-            get
-            {
-                return _cps;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-        }
-
-        public BuildingsControl(TabPage myPage, Point location, string name, decimal basePrice, decimal baseCps, Image img)
+        public BuildingsControl(TabPage myPage, Point location, string name, double basePrice, double baseCps, Image img)
         {
             _myPage = myPage;
             _location = location;
@@ -75,6 +35,50 @@ namespace CookieClikerCalculator
             _baseCps = baseCps;
             _cps = baseCps;
             _img = img;
+        }
+
+        public NumericUpDown NudCount
+        {
+            get
+            {
+                return _nudCount;
+            }
+        }
+
+        public double BaseCps
+        {
+            get
+            {
+                return _baseCps;
+            }
+        }
+
+        public double Price
+        {
+            get
+            {
+                return _price;
+            }
+        }
+
+        public double Cps
+        {
+            get
+            {
+                return _cps;
+            }
+            set
+            {
+                _cps = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
         }
 
 
@@ -112,8 +116,8 @@ namespace CookieClikerCalculator
 
         private void addBuilding(object sender, EventArgs e)
         {
-            //_basePrice = Decimal.Multiply(_basePrice, (decimal)1.15);
-            _price = Decimal.Multiply(_basePrice, (decimal)Math.Pow(1.15, (double)_nudCount.Value));
+            //_basePrice = double.Multiply(_basePrice, (double)1.15);
+            _price = _basePrice * Math.Pow(1.15, (double)_nudCount.Value);
 
             _lblPrice.Text = String.Format("{0:0.00}", _price);
         }
