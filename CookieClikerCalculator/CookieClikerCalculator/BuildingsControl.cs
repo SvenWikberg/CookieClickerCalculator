@@ -76,7 +76,7 @@ namespace CookieClikerCalculator
             _cps = baseCps;
             _img = img;
         }
-        
+
 
         public void drawBuildingsControl()
         {

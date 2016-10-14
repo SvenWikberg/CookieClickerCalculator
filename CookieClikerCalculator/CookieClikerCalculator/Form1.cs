@@ -16,7 +16,6 @@ namespace CookieClikerCalculator
     public partial class frmMain : Form
     {
         List<BuildingsControl> lstBuiCtrl;
-        List<CpsItem> lstCpsItem;
         decimal cps;
 
         public frmMain()
@@ -28,7 +27,6 @@ namespace CookieClikerCalculator
 
             List<Buildings> lstBuilding = new List<Buildings>(connection.GetBuildings);
             lstBuiCtrl = new List<BuildingsControl>();
-            lstCpsItem = new List<CpsItem>();
 
             #region comm
             /*ImageList imgLstBuilding = new ImageList();
@@ -59,13 +57,19 @@ namespace CookieClikerCalculator
             {
                 lstBuiCtrl.Add(new BuildingsControl(tPageBuilding, new Point(20, i * 40), lstBuilding[i].Name, (decimal)Math.Pow(10, lstBuilding[i].BasePricePuissance10) * (decimal)lstBuilding[i].BasePrice, (decimal)Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * (decimal)lstBuilding[i].BaseCps, new Bitmap(Image.FromFile("img/buildings/" + lstBuilding[i].ImgFileName))));
                 lstBuiCtrl[i].drawBuildingsControl();
-                lstBuiCtrl[i].NudCount.ValueChanged += calculateCps;
+                lstBuiCtrl[i].NudCount.ValueChanged += BuiCtrlNud_ValueChanged;
             }
 
-            calaculateBestItem();
+            calculateBestItem();
         }
 
-        public void calculateCps(object sender, EventArgs e)
+        public void BuiCtrlNud_ValueChanged(object sender, EventArgs e)
+        {
+            calculateCps();
+            calculateBestItem();
+        }
+
+        public void calculateCps()
         {
             cps = 0;
 
@@ -77,17 +81,22 @@ namespace CookieClikerCalculator
             lblCps.Text = String.Format("{0:0.00}", cps);
         }
 
-        public void calaculateBestItem() // A FINIR
+        public void calculateBestItem()
         {
+            List<CpsItem> lstCpsItem = new List<CpsItem>();
+
+            lbxBestItem.Items.Clear();
+
             foreach (BuildingsControl bui in lstBuiCtrl)
             {
                 lstCpsItem.Add(new CpsItem(bui.Price, bui.Cps, bui.Name));
             }
 
-
-            decimal test = lstCpsItem.Min(t => t.Ratio);
-            //lstCpsItem.Sort();
-            
+            lstCpsItem = lstCpsItem.OrderBy(o => o.Ratio).ToList();
+            for (int i = 0; i < 5; i++)
+            {
+                lbxBestItem.Items.Add(String.Format("{0}. {1}", i + 1,lstCpsItem[i].Name));
+            }
         }
     }
 }

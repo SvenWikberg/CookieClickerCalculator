@@ -10,7 +10,6 @@ namespace CookieClikerCalculator
     {
         decimal _price;
         decimal _cps;
-        decimal _ratio;
         string _name;
 
         public decimal Ratio
@@ -18,6 +17,14 @@ namespace CookieClikerCalculator
             get
             {
                 return _price / _cps;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return _name;
             }
         }
 

@@ -34,7 +34,7 @@
             this.lblCurrentCps = new System.Windows.Forms.Label();
             this.lblCps = new System.Windows.Forms.Label();
             this.lblBestItem = new System.Windows.Forms.Label();
-            this.lblBestItem1 = new System.Windows.Forms.Label();
+            this.lbxBestItem = new System.Windows.Forms.ListBox();
             this.tCtrlBuiUp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,21 +96,20 @@
             this.lblBestItem.TabIndex = 3;
             this.lblBestItem.Text = "Best Items";
             // 
-            // lblBestItem1
+            // lbxBestItem
             // 
-            this.lblBestItem1.AutoSize = true;
-            this.lblBestItem1.Location = new System.Drawing.Point(13, 210);
-            this.lblBestItem1.Name = "lblBestItem1";
-            this.lblBestItem1.Size = new System.Drawing.Size(10, 13);
-            this.lblBestItem1.TabIndex = 4;
-            this.lblBestItem1.Text = "-";
+            this.lbxBestItem.FormattingEnabled = true;
+            this.lbxBestItem.Location = new System.Drawing.Point(16, 205);
+            this.lbxBestItem.Name = "lbxBestItem";
+            this.lbxBestItem.Size = new System.Drawing.Size(275, 69);
+            this.lbxBestItem.TabIndex = 4;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 598);
-            this.Controls.Add(this.lblBestItem1);
+            this.Controls.Add(this.lbxBestItem);
             this.Controls.Add(this.lblBestItem);
             this.Controls.Add(this.lblCps);
             this.Controls.Add(this.lblCurrentCps);
@@ -131,7 +130,7 @@
         private System.Windows.Forms.Label lblCurrentCps;
         private System.Windows.Forms.Label lblCps;
         private System.Windows.Forms.Label lblBestItem;
-        private System.Windows.Forms.Label lblBestItem1;
+        private System.Windows.Forms.ListBox lbxBestItem;
     }
 }
 
