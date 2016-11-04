@@ -35,7 +35,15 @@
             this.lblCps = new System.Windows.Forms.Label();
             this.lblBestItem = new System.Windows.Forms.Label();
             this.lbxBestItem = new System.Windows.Forms.ListBox();
+            this.lbNameBui = new System.Windows.Forms.Label();
+            this.lblCpsBui = new System.Windows.Forms.Label();
+            this.lblPriceBui = new System.Windows.Forms.Label();
+            this.lblQuantityBui = new System.Windows.Forms.Label();
+            this.lblNameUp = new System.Windows.Forms.Label();
+            this.lblPriceUp = new System.Windows.Forms.Label();
             this.tCtrlBuiUp.SuspendLayout();
+            this.tPageBuilding.SuspendLayout();
+            this.tPageUpgrade.SuspendLayout();
             this.SuspendLayout();
             // 
             // tCtrlBuiUp
@@ -51,6 +59,10 @@
             // tPageBuilding
             // 
             this.tPageBuilding.AutoScroll = true;
+            this.tPageBuilding.Controls.Add(this.lblQuantityBui);
+            this.tPageBuilding.Controls.Add(this.lblPriceBui);
+            this.tPageBuilding.Controls.Add(this.lblCpsBui);
+            this.tPageBuilding.Controls.Add(this.lbNameBui);
             this.tPageBuilding.Location = new System.Drawing.Point(4, 22);
             this.tPageBuilding.Name = "tPageBuilding";
             this.tPageBuilding.Padding = new System.Windows.Forms.Padding(3);
@@ -62,6 +74,8 @@
             // tPageUpgrade
             // 
             this.tPageUpgrade.AutoScroll = true;
+            this.tPageUpgrade.Controls.Add(this.lblPriceUp);
+            this.tPageUpgrade.Controls.Add(this.lblNameUp);
             this.tPageUpgrade.Location = new System.Drawing.Point(4, 22);
             this.tPageUpgrade.Name = "tPageUpgrade";
             this.tPageUpgrade.Padding = new System.Windows.Forms.Padding(3);
@@ -105,6 +119,60 @@
             this.lbxBestItem.Size = new System.Drawing.Size(275, 69);
             this.lbxBestItem.TabIndex = 4;
             // 
+            // lbNameBui
+            // 
+            this.lbNameBui.AutoSize = true;
+            this.lbNameBui.Location = new System.Drawing.Point(70, 12);
+            this.lbNameBui.Name = "lbNameBui";
+            this.lbNameBui.Size = new System.Drawing.Size(35, 13);
+            this.lbNameBui.TabIndex = 5;
+            this.lbNameBui.Text = "Name";
+            // 
+            // lblCpsBui
+            // 
+            this.lblCpsBui.AutoSize = true;
+            this.lblCpsBui.Location = new System.Drawing.Point(290, 12);
+            this.lblCpsBui.Name = "lblCpsBui";
+            this.lblCpsBui.Size = new System.Drawing.Size(25, 13);
+            this.lblCpsBui.TabIndex = 6;
+            this.lblCpsBui.Text = "Cps";
+            // 
+            // lblPriceBui
+            // 
+            this.lblPriceBui.AutoSize = true;
+            this.lblPriceBui.Location = new System.Drawing.Point(170, 12);
+            this.lblPriceBui.Name = "lblPriceBui";
+            this.lblPriceBui.Size = new System.Drawing.Size(31, 13);
+            this.lblPriceBui.TabIndex = 7;
+            this.lblPriceBui.Text = "Price";
+            // 
+            // lblQuantityBui
+            // 
+            this.lblQuantityBui.AutoSize = true;
+            this.lblQuantityBui.Location = new System.Drawing.Point(410, 12);
+            this.lblQuantityBui.Name = "lblQuantityBui";
+            this.lblQuantityBui.Size = new System.Drawing.Size(46, 13);
+            this.lblQuantityBui.TabIndex = 8;
+            this.lblQuantityBui.Text = "Quantity";
+            // 
+            // lblNameUp
+            // 
+            this.lblNameUp.AutoSize = true;
+            this.lblNameUp.Location = new System.Drawing.Point(70, 12);
+            this.lblNameUp.Name = "lblNameUp";
+            this.lblNameUp.Size = new System.Drawing.Size(35, 13);
+            this.lblNameUp.TabIndex = 0;
+            this.lblNameUp.Text = "Name";
+            // 
+            // lblPriceUp
+            // 
+            this.lblPriceUp.AutoSize = true;
+            this.lblPriceUp.Location = new System.Drawing.Point(170, 12);
+            this.lblPriceUp.Name = "lblPriceUp";
+            this.lblPriceUp.Size = new System.Drawing.Size(31, 13);
+            this.lblPriceUp.TabIndex = 6;
+            this.lblPriceUp.Text = "Price";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +188,10 @@
             this.Name = "frmMain";
             this.Text = "Cookie Clicker Calculator";
             this.tCtrlBuiUp.ResumeLayout(false);
+            this.tPageBuilding.ResumeLayout(false);
+            this.tPageBuilding.PerformLayout();
+            this.tPageUpgrade.ResumeLayout(false);
+            this.tPageUpgrade.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,6 +206,12 @@
         private System.Windows.Forms.Label lblCps;
         private System.Windows.Forms.Label lblBestItem;
         private System.Windows.Forms.ListBox lbxBestItem;
+        private System.Windows.Forms.Label lblQuantityBui;
+        private System.Windows.Forms.Label lblPriceBui;
+        private System.Windows.Forms.Label lblCpsBui;
+        private System.Windows.Forms.Label lbNameBui;
+        private System.Windows.Forms.Label lblPriceUp;
+        private System.Windows.Forms.Label lblNameUp;
     }
 }
 

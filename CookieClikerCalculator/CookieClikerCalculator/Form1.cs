@@ -38,14 +38,14 @@ namespace CookieClikerCalculator
 
             for (int i = 0; i < lstBuilding.Count; i++)
             {
-                lstBuiCtrl.Add(new BuildingsControl(tPageBuilding, new Point(20, i * 40), lstBuilding[i].Name, Math.Pow(10, lstBuilding[i].BasePricePuissance10) * lstBuilding[i].BasePrice, Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * lstBuilding[i].BaseCps, new Bitmap(Image.FromFile("img/buildings/" + lstBuilding[i].ImgFileName))));
+                lstBuiCtrl.Add(new BuildingsControl(tPageBuilding, new Point(20, i * 40 + 40), lstBuilding[i].Name, Math.Pow(10, lstBuilding[i].BasePricePuissance10) * lstBuilding[i].BasePrice, Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * lstBuilding[i].BaseCps, new Bitmap(Image.FromFile("img/buildings/" + lstBuilding[i].ImgFileName))));
                 lstBuiCtrl[i].drawBuildingsControl();
                 lstBuiCtrl[i].NudCount.ValueChanged += BuiCtrlNud_ValueChanged;
             }
 
             for (int i = 0; i < lstUpgrade.Count; i++)
             {
-                lstUpCtrl.Add(new UpgradesControl(tPageUpgrade, new Point(20, i * 40), lstUpgrade[i].Name, Math.Pow(10, lstUpgrade[i].BasePricePuissance10) * lstUpgrade[i].BasePrice, new Bitmap(Image.FromFile("img/upgrades/" + lstUpgrade[i].ImgFileName)), lstUpgrade[i]));
+                lstUpCtrl.Add(new UpgradesControl(tPageUpgrade, new Point(20, i * 40 + 40), lstUpgrade[i].Name, Math.Pow(10, lstUpgrade[i].BasePricePuissance10) * lstUpgrade[i].BasePrice, new Bitmap(Image.FromFile("img/upgrades/" + lstUpgrade[i].ImgFileName)), lstUpgrade[i]));
                 lstUpCtrl[i].drawUpgradesControl();
                 lstUpCtrl[i].CkbxBuyed.CheckedChanged += UpCtrlCkBx_CheckedChanged;
             }
@@ -65,6 +65,7 @@ namespace CookieClikerCalculator
             {
                 lstBuiCtrl[i].BaseCps = Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * lstBuilding[i].BaseCps;
             }
+
             calculateCps();
             calculateBestItem();
         }
