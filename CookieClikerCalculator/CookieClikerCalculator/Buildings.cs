@@ -74,6 +74,10 @@ namespace CookieClikerCalculator
             {
                 return _baseCps;
             }
+            set
+            {
+                _baseCps = value;
+            }
         }
 
         public double BaseCpsPuissance10

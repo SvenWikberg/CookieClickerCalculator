@@ -17,21 +17,24 @@ namespace CookieClikerCalculator
     {
         List<BuildingsControl> lstBuiCtrl;
         List<UpgradesControl> lstUpCtrl;
+        List<Upgrades> lstUpgrade;
+        List<Buildings> lstBuilding;
+        MyConnection connection;
+
         double cps;
 
         public frmMain()
         {
             InitializeComponent();
+            DoubleBuffered = true;
 
-            MySqlConnection myBdd = new MySqlConnection("server=127.0.0.1;database=cookieClicker;user=wikbergs;password=1234");
-            MyConnection connection = new MyConnection(myBdd);
+            connection = new MyConnection();
 
-            List<Buildings> lstBuilding = new List<Buildings>(connection.GetBuildings);
+            lstBuilding = new List<Buildings>(connection.GetBuildings);
             lstBuiCtrl = new List<BuildingsControl>();
 
-            List<Upgrades> lstUpgrade = new List<Upgrades>(connection.GetUpgrades);
+            lstUpgrade = new List<Upgrades>(connection.GetUpgrades);
             lstUpCtrl = new List<UpgradesControl>();
-
 
             for (int i = 0; i < lstBuilding.Count; i++)
             {
@@ -42,8 +45,9 @@ namespace CookieClikerCalculator
 
             for (int i = 0; i < lstUpgrade.Count; i++)
             {
-                lstUpCtrl.Add(new UpgradesControl(tPageUpgrade, new Point(20, i * 40), lstUpgrade[i].Name, Math.Pow(10, lstUpgrade[i].BasePricePuissance10) * lstUpgrade[i].BasePrice, new Bitmap(Image.FromFile("img/upgrades/" + lstUpgrade[i].ImgFileName))));
+                lstUpCtrl.Add(new UpgradesControl(tPageUpgrade, new Point(20, i * 40), lstUpgrade[i].Name, Math.Pow(10, lstUpgrade[i].BasePricePuissance10) * lstUpgrade[i].BasePrice, new Bitmap(Image.FromFile("img/upgrades/" + lstUpgrade[i].ImgFileName)), lstUpgrade[i]));
                 lstUpCtrl[i].drawUpgradesControl();
+                lstUpCtrl[i].CkbxBuyed.CheckedChanged += UpCtrlCkBx_CheckedChanged;
             }
 
             calculateBestItem();
@@ -57,6 +61,10 @@ namespace CookieClikerCalculator
 
         public void UpCtrlCkBx_CheckedChanged(object sender, EventArgs e)
         {
+            for (int i = 0; i < lstBuilding.Count; i++)
+            {
+                lstBuiCtrl[i].BaseCps = Math.Pow(10, lstBuilding[i].BaseCpsPuissance10) * lstBuilding[i].BaseCps;
+            }
             calculateCps();
             calculateBestItem();
         }

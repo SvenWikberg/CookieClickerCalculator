@@ -15,8 +15,9 @@ namespace CookieClikerCalculator
         int _buiQuantityNeeded;
         string _imgFileName;
         int _idEffect;
+        Buildings _bui;
 
-        public Upgrades(int idUpgrade, string name, double basePrice, double basePricePuissance10, int buiQuantityNeeded, string imgFileName, int idEffect)
+        public Upgrades(int idUpgrade, string name, double basePrice, double basePricePuissance10, int buiQuantityNeeded, string imgFileName, int idEffect, Buildings bui)
         {
             _idUpgrade = idUpgrade;
             _name = name;
@@ -25,6 +26,7 @@ namespace CookieClikerCalculator
             _buiQuantityNeeded = buiQuantityNeeded;
             _imgFileName = imgFileName;
             _idEffect = idEffect;
+            _bui = bui;
         }
 
         #region Properties
@@ -75,7 +77,31 @@ namespace CookieClikerCalculator
                 return _imgFileName;
             }
         }
+
+        public Buildings Bui
+        {
+            get
+            {
+                return _bui;
+            }
+
+            set
+            {
+                _bui = value;
+            }
+        }
         #endregion
 
+        public void applyEffect()
+        {
+            Effects tmp = new Effects();
+            tmp.applyEffect(_idEffect, _bui);
+        }
+
+        public void desapplyEffect()
+        {
+            Effects tmp = new Effects();
+            tmp.desapplyEffect(_idEffect, _bui);
+        }
     }
 }

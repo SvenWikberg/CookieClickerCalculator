@@ -15,19 +15,21 @@ namespace CookieClikerCalculator
         string _name;
         double _basePrice;
         Image _img;
+        Upgrades _upgrade;
 
         PictureBox _pbx;
         Label _lblName;
         Label _lblPrice;
         CheckBox _ckbxBuyed;
 
-        public UpgradesControl(TabPage myPage, Point location, string name, double basePrice, Image img)
+        public UpgradesControl(TabPage myPage, Point location, string name, double basePrice, Image img, Upgrades upgrade)
         {
             _myPage = myPage;
             _location = location;
             _name = name;
             _basePrice = basePrice;
             _img = img;
+            _upgrade = upgrade;
         }
 
         #region Properties
@@ -91,12 +93,27 @@ namespace CookieClikerCalculator
             _ckbxBuyed = new CheckBox();
             _ckbxBuyed.Location = new Point(_lblPrice.Location.X + 300, _location.Y + 15);
             _ckbxBuyed.Checked = false;
-            //_ckbxBuyed.CheckedChanged
+            _ckbxBuyed.CheckedChanged += BuyedCheckedChanged;
 
             _myPage.Controls.Add(_pbx);
             _myPage.Controls.Add(_lblName);
             _myPage.Controls.Add(_lblPrice);
             _myPage.Controls.Add(_ckbxBuyed);
+        }
+
+        public void BuyedCheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = (CheckBox)sender;
+
+            if (chk.Checked)
+            {
+                _upgrade.applyEffect();
+            }
+            else
+            {
+                _upgrade.desapplyEffect();
+            }
+            
         }
     }
 }
